@@ -18,8 +18,8 @@ public class SortTest extends TestCase {
     public void testMerge() {
         int[] startingArray = new int[] {19,5,34,81,17,22,6};
         int[] leftHalf = new int[] {5,19,34,81};
-        int[] rightHalf = new int[] {6,17,22};
-        int[] expectedResult = new int[] {5,6,17,19,22,34,81};
+        int[] rightHalf = new int[] {6,17,99};
+        int[] expectedResult = new int[] {5,6,17,19,34,81, 99};
         Sort.merge(startingArray,leftHalf,rightHalf);
         assertTrue(Arrays.equals(startingArray, expectedResult));
     }
